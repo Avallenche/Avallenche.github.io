@@ -1,12 +1,11 @@
 ---
-title: "My awesome website"
+title: "Homework 4 website"
 output: 
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
 
-# This is Jeff's awesome website
+# This is Allen's landing page
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+In this website, you will find information regarding myself, including my email, my github website, and a page of summary for my academic and professional experiences through out my life. Also, there is another page contains the interactive plots I have made using `NYC Restaurant Inspections` datasets. There will be in total three different types of plots inside that page visualizing different aspect of the issues we are interested in from the dataset.

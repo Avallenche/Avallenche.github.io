@@ -1,0 +1,55 @@
+---
+title: "Interactive Plots"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+data("rest_inspec")
+```
+
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+rest_inspec |> 
+  filter(boro == "BROOKLYN" & critical_flag == "Critical" & score <= 7) |> 
+  plot_ly(x = ~camis, y = ~score, type = "scatter", mode = "markers", alpha = 0.5)
+```
+
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+rest_inspec |> 
+  filter(boro == "MANHATTAN" & 
+           critical_flag == "Critical" & 
+           cuisine_description == "Korean"&
+           street == "WEST   32 STREET") |> 
+  plot_ly(y = ~score, color = ~violation_code, type = "box", colors = "viridis")
+```
+
+### Chart C
+
+```{r}
+rest_inspec |> 
+  filter(boro == "QUEENS" & cuisine_description == "American" & zipcode == 11101) |> 
+  count(dba) |> 
+  mutate(dba = fct_reorder(dba, n)) |> 
+  plot_ly(x = ~dba, y = ~n, color = ~dba, type = "bar", colors = "viridis")
+```
+
+```{r}
+rmarkdown::render("plot.Rmd", output_format = "flexdashboard::flex_dashboard")
+```
+

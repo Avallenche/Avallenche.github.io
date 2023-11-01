@@ -1,0 +1,40 @@
+---
+title: "Academic and professional experience about me"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# My academic and pofessional experiences
+
+## EDUCATION			
+### University of Washington 
+- Seattle, Seattle, WA. Graduated Jun 2023. 
+B.S. Major: Biochemistry (Dean’s List) | GPA: 3.65/4.0 
+Core Courses: Organic Chemistry, Computer Programming, Statistics Methods, Statistical Computing
+Fund Gen and Genomics, Probability, Intro to Differential Equations, Biochemistry, Matrix Algebra, General Chemistry.
+
+## WORK EXPERIENCE			
+### Nokia Communication and Technology Solutions Co 
+- Beijing, China. Jun - Aug 2021. 
+Programming Intern. 
+Developed a tool to analyze the reported SW bugs in 5G base station from a database. 
+Understood several attributes about the bugs, for example reported time, report group, group in charge, correction time, root cause, solutions, R&D information, testing environment, feature dependency, and how many times the bugs are transferred.
+Generated a statistics and summary based on the specific filters as the input of lessons learnt and continuous improvement. 
+Assisted in Python development, the database and PostgreSQL. 
+Was familiar with Linux or similar operation system. 
+Assisted in the frontend programming such as JavaScript.
+
+## RESEARCH PROJECTS 
+### Statistic Computing
+- Seattle, WA. Winter 2022. 
+Used HMM to identify CpG Island, solved problems in biology with statistical methods.
+Used NCBI GenBank to obtain the HA gene sequence of H5N1, analyzed several possible ways of transmission.
+
+### Statistical Data Science for Public Health and Biomedicine Online Research Seminar
+- New York, NY. Summer 2022. 
+Established a linear regression model using R and RStudio.
+Tested the pattern formed between the number of vaccinations and the number of deaths caused by the newly developed SARS-COV-2 virus.
+Applied the K-fold cross-validation method, verified the results of linear regression.
+Calculated R-squared value of linear regression, and MAE values with cross-validation. Draw the residual plot, and QQ plot
